@@ -1,0 +1,44 @@
+{
+  "name": "abhayfernandes.github.io",
+  "homepage": "https://abhayfernandes.github.io",
+  "version": "0.1.95",
+  "dependencies": {
+    "gh-pages": "^5.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "web-vitals": "^3.0.3"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app"
+    ]
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.37",
+    "@types/react-dom": "^18.0.11",
+    "@types/web": "^0.0.99",
+    "bun-types": "canary",
+    "react-refresh": "0.10.0",
+    "react-scripts": "^5.0.1",
+    "typescript": "latest"
+  },
+  "scripts": {
+    "predeploy": "bun react-scripts build",
+    "deploy": "gh-pages -d build",
+    "dev": "bun --watch run dev.tsx"
+  },
+  "module": "index.ts",
+  "type": "module",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
